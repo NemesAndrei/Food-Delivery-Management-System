@@ -1,0 +1,6 @@
+Client: client
+Date: 03/06/2021 06:47:30
+Products: Fresh Corn Tortillas 
+Quick & Spicy Asian Pickles 
+Spicy Pickled Shallots 
+Total Price: 205.0

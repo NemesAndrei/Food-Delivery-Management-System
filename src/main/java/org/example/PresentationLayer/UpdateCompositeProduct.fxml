@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="534.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/15.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.PresentationLayer.UpdateCompositeProductController">
+    <children>
+        <TableView fx:id="menuTable" layoutX="235.0" layoutY="39.0" prefHeight="477.0" prefWidth="533.0">
+            <columns>
+                <TableColumn fx:id="titleColumn" prefWidth="75.0" text="Title"/>
+                <TableColumn fx:id="ratingColumn" prefWidth="75.0" text="Rating"/>
+                <TableColumn fx:id="caloriesColumn" prefWidth="75.0" text="Calories"/>
+                <TableColumn fx:id="proteinColumn" prefWidth="75.0" text="Protein"/>
+                <TableColumn fx:id="fatColumn" prefWidth="75.0" text="Fat"/>
+                <TableColumn fx:id="sodiumColumn" prefWidth="75.0" text="Sodium"/>
+                <TableColumn fx:id="priceColumn" prefWidth="75.0" text="Price"/>
+            </columns>
+        </TableView>
+        <ComboBox fx:id="updateCompositeCombo" layoutX="79.0" layoutY="79.0" prefHeight="25.0" prefWidth="149.0"/>
+        <Button fx:id="addCompositeButton" layoutX="79.0" layoutY="112.0" mnemonicParsing="false"
+                onAction="#buttonAction" prefHeight="25.0" prefWidth="70.0" text="Add"/>
+        <Button fx:id="deleteCompositeButton" layoutX="157.0" layoutY="112.0" mnemonicParsing="false"
+                onAction="#buttonAction" prefHeight="25.0" prefWidth="70.0" text="Delete"/>
+        <Button fx:id="editCompositeButton" layoutX="78.0" layoutY="207.0" mnemonicParsing="false"
+                onAction="#buttonAction" prefHeight="25.0" prefWidth="149.0" text="Edit"/>
+        <Label fx:id="compositeTitleLabel" layoutX="24.0" layoutY="171.0" text="Name"/>
+        <TextField fx:id="compositeTitleText" layoutX="79.0" layoutY="167.0" onAction="#buttonAction"/>
+        <Label fx:id="editCompositeLabel" layoutX="65.0" layoutY="49.0" text="Edit Composite Product"/>
+    </children>
+</AnchorPane>
